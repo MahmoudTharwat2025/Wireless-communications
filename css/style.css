@@ -1,0 +1,517 @@
+/* Start Glopul Rulrs */
+/* Bootstrap V.5 This Link Is Arabic */
+@import url(../css/bootstrap.min.css);
+/* Fontawesome 6.2.1 */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+/* Font helveticaneueltar */
+@import url(../css/fonts.css);
+
+:root {
+    --main-color: #FB0066;
+    --secondly-color: #4a4a4a;
+    --three-color: #FF9133;
+    --three-hover-color: #d87c2b;
+    --hover-but-color: #4c00a9;
+    --background-color: #F5F1FA;
+    --background-secondly-color: #FBF9FE;
+    --main-transition: all .5s;
+}
+
+body {
+    font-family: helveticaneueltar;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: var(--secondly-color);
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+p {
+    color: #707070;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondly-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    font-size: 14px;
+}
+
+.p-80 {
+    padding: 80px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.but-main {
+    background-color: var(--main-color);
+    padding: 8px 35px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: var(--main-transition);
+}
+
+.but-main:hover {
+    background-color: var(--hover-but-color);
+    color: #FFF;
+}
+
+.main_title {
+    margin-bottom: 40px;
+}
+
+/* End Glopul Rulrs */
+/* Start top-heade */
+.top-header {
+    background-color: var(--hover-but-color);
+}
+
+.about-us a {
+    color: #FFF;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.lang ul li a {
+    color: #FFF;
+    display: block;
+}
+
+.lang ul li a i {
+    margin: 0 10px;
+}
+
+/* End top-heade */
+/* Start Navbar */
+header {
+    height: 80vh;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link.active::before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: var(--hover-but-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.push a:hover {
+    color: var(--secondly-color);
+}
+
+.landing_title {
+    font-size: 50px;
+}
+
+/* End Navbar */
+
+/* Start country */
+.country {
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.country_title {
+    font-size: 42px;
+}
+
+.list-one .list-item {
+    position: relative;
+    z-index: 1;
+}
+
+.list-one .list-item::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: var(--main-transition);
+    border-radius: 5px;
+}
+
+.list-one .list-item:hover::before {
+    width: 100%;
+    background-color: #CCC;
+}
+
+.btn-group .btn {
+    font-size: 14px;
+}
+
+.btn-group .btn.active {
+    background-color: var(--three-color);
+    color: #FFF;
+    border-radius: 5px !important;
+    border: none;
+}
+
+.btn-group .btn.active:hover {
+    background-color: var(--three-hover-color);
+}
+
+.list-one {
+    cursor: pointer;
+}
+
+.list-one .list-item {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.list-one .list-item .right span {
+    display: block;
+    margin-right: 10px;
+}
+
+.list-one .list-item .left i {
+    font-size: 14px;
+}
+
+/* End country */
+
+/* How To Work */
+.work-item {
+    margin: 10px 0;
+}
+
+.work-item img {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.work-item h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* End To Work */
+
+/* Start Why Us  */
+.why_us {
+    background-color: var(--background-color);
+}
+
+.card {
+    box-shadow: 0 0 7px #cccccc94
+}
+
+.card-image {
+    position: relative;
+    padding: 50px 50px 0;
+    z-index: 1;
+}
+
+.card-image::before {
+    content: "";
+    background-image: url(../img/bac-img.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-position-x: center;
+    z-index: -1;
+}
+
+.card-image img {
+    position: relative;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.card-image .card-title {
+    margin-top: 20px;
+}
+
+.card-body {
+    background: #F9F6FC;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.card-body-right i {
+    background-color: #DFD1EF;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--secondly-color);
+}
+
+.card-body-left i {
+    color: #FCB52C;
+    font-size: 15px;
+}
+
+
+
+
+/* End Why Us  */
+
+/* Start Reviews */
+.reviews {
+    background-color: var(--background-secondly-color);
+    position: relative;
+}
+
+.pear-of-scrences {
+    position: relative;
+}
+
+.sciences-top,
+.sciences-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.sciences-top img,
+.sciences-bottom img {
+    position: absolute;
+    width: 40px;
+}
+
+.sciences-top img:first-of-type {
+    right: 140px;
+    top: 40px;
+}
+
+.sciences-top img:last-of-type {
+    left: 140px;
+    top: 40px;
+}
+
+.sciences-bottom img:first-of-type {
+    right: 140px;
+}
+
+.sciences-bottom img:nth-child(2) {
+    bottom: -70px;
+}
+
+.sciences-bottom img:last-of-type {
+    left: 140px;
+
+}
+
+.reviews-per {
+    background-color: #FFF;
+    box-shadow: 0px 10px 10px #f3eefa;
+    padding: 15px;
+    position: relative;
+    margin-top: 200px;
+
+}
+
+.reviews-per::after {
+    content: "";
+    background-image: url(../img/Path_2539.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    height: 100%;
+    left: 90%;
+}
+
+.reviews-text {
+    font-size: 13px;
+}
+
+.reviews-body-stars {
+    margin: 10px 0;
+}
+
+.reviews-body-stars i {
+    color: #FCB52C;
+    font-size: 12px;
+}
+
+.card-foot-img {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reviews-foot {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-foot-text {
+    margin-right: 15px;
+}
+
+.peviews-center {
+    padding: 40px;
+    transform: translatey(-50px);
+
+}
+
+.reviews-text-center {
+    font-size: 15px;
+}
+
+/* End Reviews */
+
+/* Start download */
+.down-app .row {
+    background: #4C00A9;
+    background: linear-gradient(to right, #FF9133, #4C00A9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app-title {
+    color: #FFF;
+    font-size: 40px;
+}
+
+.app-description {
+    color: #FEE9F1;
+    margin: 20px 0;
+}
+
+
+.down-app-link img {
+    border-radius: 5px;
+}
+
+/* End download */
+
+/* Start Footer */
+footer {
+    background-color: var(--hover-but-color);
+    position: relative;
+}
+
+.footer-prand {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    color: #E8D5FF;
+}
+
+.footer-title {
+    color: #F2E8FE;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-list li a {
+    display: block;
+    color: #E8D5FF;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: var(--main-transition);
+}
+
+.footer-list li a:hover {
+    transform: translateX(-10px);
+    color: #d8c5ee;
+}
+
+.footer-social a {
+    color: #E8D5FF;
+    margin-left: 20px;
+    transition: var(--main-transition);
+}
+
+.footer-social a:first-of-type:hover {
+    color: #FFFC00;
+}
+
+.footer-social a:nth-child(2):hover {
+    color: #405DE6;
+}
+
+.footer-social a:last-of-type:hover {
+    color: #1DA1F2;
+}
+
+.foot_bubbles span {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.foot_bubbles .bubb-one {
+    width: 10px;
+    height: 10px;
+    background-color: #FB0066;
+    position: absolute;
+    right: 20px;
+    bottom: 140px;
+}
+
+.foot_bubbles .bubb-two {
+    width: 20px;
+    height: 20px;
+    background-color: #FF9133;
+    position: absolute;
+    right: 40px;
+    bottom: 90px;
+}
+
+.foot_bubbles .bubb-three {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+}
+
+/* End Footer */
+
+
+/* Start Copyright */
+.copyright {
+    background-color: #FB0066;
+}
+
+.copyright-title {
+    color: #FEF6F9;
+}
+
+/* End Copyright */
